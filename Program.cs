@@ -25,4 +25,5 @@ SortArray(string[])
 
 string[]array = new string[5];
 CreateArray(array);
+Console.WriteLine("Source array is:");
 PrintArray(array);
