@@ -1,4 +1,12 @@
-﻿void  CreateArray(string[]array)
+﻿/*
+Задача: Написать программу, которая из имеющегося массива строк формирует новый массив из строк,
+длина которых меньше, либо равна 3 символам. Первоначальный массив можно ввести с клавиатуры,
+либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями,
+лучше обойтись исключительно массивами.
+*/
+
+
+void  CreateArray(string[]array)  // Функция для ввода элементов массива пользователем
 {
     Console.WriteLine("Please input 5 string elements of array:");
     for (int i = 0; i < array.Length; i++)
@@ -9,7 +17,7 @@
     Console.WriteLine();
 }
 
-void PrintArray(string[]array)
+void PrintArray(string[]array)   // Функция для вывода массива на экран
 {
     for (int i = 0; i < array.Length; i++)
     {
@@ -17,7 +25,7 @@ void PrintArray(string[]array)
     }
 }
 
-int LengthArray(string[]array)
+int LengthArray(string[]array)   // Функция для расчета длины нового массива, исходя из условий задачи
 {
     int  finalArrayLenght = 0;
     for (int i = 0; i < array.Length; i++)
@@ -30,7 +38,7 @@ int LengthArray(string[]array)
     return finalArrayLenght;
 }
 
-void  SortArray(string[]firstArray, string[]secondArray)
+void  SortArray(string[]firstArray, string[]secondArray) // Функция для выборки нужных эл-ов по условию задачи
 {
     for (int i = 0, j = 0; i < firstArray.Length; i++)
     {
@@ -52,3 +60,4 @@ string[]finalArray = new string[LengthArray(array)];
 SortArray(array, finalArray);
 Console.WriteLine("Final array is:");
 PrintArray(finalArray);
+
